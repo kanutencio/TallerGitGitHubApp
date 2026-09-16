@@ -17,6 +17,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -64,31 +65,29 @@ fun PersonalCard(){
 
         Text(
             text = "Alejandro Pradilla Castro",
-            fontSize = 15.sp,
+            fontSize = 18.sp,
             fontWeight = FontWeight.Bold,
         )
 
         Spacer(modifier = Modifier.height(5.dp))
 
         Text(
-            text = "Ing Sistemas",
+            text = "Desarrollador movil Jr",
             color = Color.Blue,
-            fontSize = 15.sp,
+            fontSize = 18.sp,
             fontWeight = FontWeight.Bold,
         )
         Spacer(modifier = Modifier.height(15.dp))
-        Text(
-            text = "---------------------------------------------------------",
-            color = Color.Gray.copy(alpha = 0.6f),
-            fontSize = 15.sp,
-            fontWeight = FontWeight.Bold,
+        HorizontalDivider(
+            modifier = Modifier.padding(horizontal = 30.dp),
+            thickness = 1.dp,
+            color = Color.LightGray
         )
         Spacer(modifier = Modifier.height(15.dp))
 
         Column(modifier = Modifier
-            .fillMaxSize().padding(8.dp),
-            horizontalAlignment = Alignment.Start
-        ) {
+            .fillMaxSize(),
+            horizontalAlignment = Alignment.Start) {
             Text(
                 text = "Edad",
                 color = Color.Gray.copy(alpha = 0.6f),
@@ -103,7 +102,7 @@ fun PersonalCard(){
                     .padding(8.dp),
                 text = "20 años",
                 color = Color.Black,
-                fontSize = 15.sp,
+                fontSize = 18.sp,
             )
 
             Spacer(modifier = Modifier.height(10.dp))
@@ -120,7 +119,7 @@ fun PersonalCard(){
             Text(text = "[email protected]",
                 modifier = Modifier
                     .padding(8.dp),
-                fontSize = 16.sp,
+                fontSize = 18.sp,
                 color = Color.Blue,
                 textDecoration = TextDecoration.Underline
             )
@@ -141,9 +140,46 @@ fun PersonalCard(){
                     .padding(8.dp),
                 text = "Bucaramanga",
                 color = Color.Black,
-                fontSize = 15.sp,
+                fontSize = 18.sp,
             )
+            Spacer(modifier = Modifier.height(10.dp))
+
+            HorizontalDivider(
+                modifier = Modifier.padding(horizontal = 30.dp),
+                thickness = 1.dp,
+                color = Color.LightGray
+            )
+
+            Spacer(modifier = Modifier.height(10.dp))
+
+            Column(modifier = Modifier
+                .fillMaxSize().padding(8.dp),
+                horizontalAlignment = Alignment.CenterHorizontally
+            )
+            {
+                Text(
+                    text = "Sobre mi materia favorita",
+                    color = Color.Gray.copy(alpha = 0.6f),
+                    fontSize = 15.sp,
+                    fontWeight = FontWeight.Bold,
+                )
+
+                Spacer(modifier = Modifier.height(10.dp))
+
+                Text(
+                    modifier = Modifier
+                        .padding(3.dp),
+                    text = "Me apasiona el Desarrollo de Aplicaciones\n" +
+                            "Möviles porque permite transformar ideas\n" +
+                            "en herramientas tangibles que Ias\n" +
+                            "personas usan a diario. Me encanta el reto\n" +
+                            "de diseöar interfaces intuitivas.",
+                    color = Color.Black,
+                    fontSize = 18.sp,
+                )
+            }
         }
+
     }
 }
 
