@@ -187,7 +187,7 @@ fun PersonalCard(){
                     textAlign = TextAlign.Center,
                     modifier = Modifier
                         .background(
-                            Color.Blue,
+                            Color(0xFF1976D3),
                             shape = RoundedCornerShape(30.dp)
                         )
                         .padding(
