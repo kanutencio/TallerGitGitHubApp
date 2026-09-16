@@ -28,6 +28,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -66,8 +67,83 @@ fun PersonalCard(){
             fontSize = 15.sp,
             fontWeight = FontWeight.Bold,
         )
-        Spacer(modifier = Modifier.height(25.dp))
 
+        Spacer(modifier = Modifier.height(5.dp))
+
+        Text(
+            text = "Ing Sistemas",
+            color = Color.Blue,
+            fontSize = 15.sp,
+            fontWeight = FontWeight.Bold,
+        )
+        Spacer(modifier = Modifier.height(15.dp))
+        Text(
+            text = "---------------------------------------------------------",
+            color = Color.Gray.copy(alpha = 0.6f),
+            fontSize = 15.sp,
+            fontWeight = FontWeight.Bold,
+        )
+        Spacer(modifier = Modifier.height(15.dp))
+
+        Column(modifier = Modifier
+            .fillMaxSize().padding(8.dp),
+            horizontalAlignment = Alignment.Start
+        ) {
+            Text(
+                text = "Edad",
+                color = Color.Gray.copy(alpha = 0.6f),
+                fontSize = 15.sp,
+                fontWeight = FontWeight.Bold,
+            )
+
+            Spacer(modifier = Modifier.height(10.dp))
+
+            Text(
+                modifier = Modifier
+                    .padding(8.dp),
+                text = "20 años",
+                color = Color.Black,
+                fontSize = 15.sp,
+            )
+
+            Spacer(modifier = Modifier.height(10.dp))
+
+            Text(
+                text = "Correo",
+                color = Color.Gray.copy(alpha = 0.6f),
+                fontSize = 15.sp,
+                fontWeight = FontWeight.Bold,
+            )
+
+            Spacer(modifier = Modifier.height(10.dp))
+
+            Text(text = "[email protected]",
+                modifier = Modifier
+                    .padding(8.dp),
+                fontSize = 16.sp,
+                color = Color.Blue,
+                textDecoration = TextDecoration.Underline
+            )
+            Spacer(modifier = Modifier.height(10.dp))
+
+
+            Text(
+                text = "Ciudad",
+                color = Color.Gray.copy(alpha = 0.6f),
+                fontSize = 15.sp,
+                fontWeight = FontWeight.Bold,
+            )
+
+            Spacer(modifier = Modifier.height(10.dp))
+
+            Text(
+                modifier = Modifier
+                    .padding(8.dp),
+                text = "Bucaramanga",
+                color = Color.Black,
+                fontSize = 15.sp,
+            )
+        }
     }
 }
 
