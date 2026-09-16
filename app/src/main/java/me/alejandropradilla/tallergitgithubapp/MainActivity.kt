@@ -177,6 +177,23 @@ fun PersonalCard(){
                     color = Color.Black,
                     fontSize = 18.sp,
                 )
+                Spacer(modifier = Modifier.height(40.dp))
+
+                Text(
+                    text="Contactar conmigo",
+                    fontSize = 20.sp,
+                    color = Color.White,
+                    fontStyle = FontStyle.Italic,
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier
+                        .background(
+                            Color.Blue,
+                            shape = RoundedCornerShape(30.dp)
+                        )
+                        .padding(
+                            all = 25.dp
+                        )
+                )
             }
         }
 
