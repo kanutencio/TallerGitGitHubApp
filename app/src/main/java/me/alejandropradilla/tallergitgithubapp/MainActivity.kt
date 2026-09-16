@@ -61,6 +61,13 @@ fun PersonalCard(){
         )
         Spacer(modifier = Modifier.height(25.dp))
 
+        Text(
+            text = "Alejandro Pradilla Castro",
+            fontSize = 15.sp,
+            fontWeight = FontWeight.Bold,
+        )
+        Spacer(modifier = Modifier.height(25.dp))
+
     }
 }
 
